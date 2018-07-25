@@ -20,11 +20,15 @@ F1.pack(side=LEFT)
 F2 = Frame(root, width=2000, height=1000,  relief=SUNKEN)
 F2.pack(side=RIGHT)
 
+
 #Time
+
 
 localtime = time.asctime(time.localtime(time.time()))
 
+
 #info
+
 
 lblInfo = Label(Tops, font=('arial', 50, 'bold'), text="Commercial Building Estimate", fg="steel blue", bd=10, anchor="w")
 lblInfo.grid(row=10, column=0)
@@ -146,6 +150,7 @@ btnEqual = Button(F2, padx=16, pady=16, bd=8, fg="black", font=('ariel', 20, 'bo
 Division = Button(F2, padx=16, pady=16, bd=8, fg="black", font=('ariel', 20, 'bold'),
            text="/", bg="white", command=lambda: btnclick("/")).grid(row=5, column=3)
 
+
 #Commercial build info
 
 
@@ -250,8 +255,8 @@ txtTotal_Estimate = Entry(F1, font=('ariel' , 16, 'bold'), textvariable=Total_Es
 txtTotal_Estimate.grid(row=0,column=3)
 
 
-
 #Buttons
+
 
 btnTotal = Button(F1, padx=16, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10,
                   text="Total", bg="blue", command=ref).grid(row=13, column=1)
