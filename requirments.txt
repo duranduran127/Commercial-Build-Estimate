@@ -1,2 +1,0 @@
-tkinter
-python == 2.7
