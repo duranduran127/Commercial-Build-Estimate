@@ -24,9 +24,7 @@ F2.pack(side=RIGHT)
 
 localtime = time.asctime(time.localtime(time.time()))
 
-
 #info
-
 
 lblInfo = Label(Tops, font=('arial', 50, 'bold'), text="Commercial Building Estimate", fg="steel blue", bd=10, anchor="w")
 lblInfo.grid(row=10, column=0)
