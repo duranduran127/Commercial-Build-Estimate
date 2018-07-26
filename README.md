@@ -26,7 +26,7 @@ root.title("Commercial Building Estimate")
 From here I started building my calculator to use on the side for items that were not included in my function. The calulator has many lines of coes in order for it to work correctly. that includes the display, the buttons and functions. After the calculator was made I went on to creat the labels that had the main items of cost such as framing, and electrical, and there is also a total lable which is to the left side of the panel. after all the lables were build the function buttons were created which are the 'total, reset, and exit' buttons that all function as they should. When first running the program you can click the 'total' button and a random refernece will be generated for your customer number, and after all the inputs are enetered for the items desired if you press the total button the total price estimate will appear in dollars in the total label section. Once all the labels were created all i did was define the rest of my functions and create a mainloop at the end of the program that keeps it open. If you press exit on the program it will close. 
 
 # Modules
-tkinter
-pyinstaller
+tkinter/
+pyinstaller/
 datetime
 
