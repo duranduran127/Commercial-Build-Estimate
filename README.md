@@ -14,16 +14,49 @@ Building GUI's have always been of interest to me, I like the idea that many lin
 Building the mainframe of the GUI is how I staretd the project originally. I used tkinter which is a module built into python for GUI interfaces, so first I had to set the size and imort the moduleas below. 
 
 import Tkinter as tk
+
 import random
+
 import time
 
-from Tkinter import *
+from Tkinter import 
 
 root = tk.Tk()
+
 root.geometry("1600x800+0+0")
+
 root.title("Commercial Building Estimate")
 
-From here I started building my calculator to use on the side for items that were not included in my function. The calulator has many lines of coes in order for it to work correctly. that includes the display, the buttons and functions. After the calculator was made I went on to creat the labels that had the main items of cost such as framing, and electrical, and there is also a total lable which is to the left side of the panel. after all the lables were build the function buttons were created which are the 'total, reset, and exit' buttons that all function as they should. When first running the program you can click the 'total' button and a random refernece will be generated for your customer number, and after all the inputs are enetered for the items desired if you press the total button the total price estimate will appear in dollars in the total label section. Once all the labels were created all i did was define the rest of my functions and create a mainloop at the end of the program that keeps it open. If you press exit on the program it will close. 
+From here I started building my calculator to use on the side for items that were not included in my function. The calulator has many lines of coes in order for it to work correctly. That includes the display, the buttons and functions. 
+
+
+
+txtDisplay = Entry(F2, font=('arial', 20, 'bold'), textvariable=text_input, bd=30, insertwidth=4,
+                   bg="white", justify='right')
+txtDisplay.grid(columnspan=4)
+
+btn7 = Button(F2, padx=16, pady=16, bd=8, fg="black", font=('ariel', 20, 'bold'),
+           text="7", bg="white", command=lambda: btnclick(7)).grid(row=2, column=0)
+
+
+
+
+After the calculator was made I went on to creat the labels that had the main items of cost such as framing, and electrical, and there is also a total lable which is to the left side of the panel. 
+
+
+
+lblElectrical = Label(F1, font=('ariel', 16, 'bold'), text="Electrical", bd=16, anchor='w')
+lblElectrical.grid(row=3, column=0)
+txtElectrical = Entry(F1, font=('ariel', 16, 'bold'), textvariable=Electrical, bd=10, insertwidth=4,
+                     bg="white", justify='right')
+txtElectrical.grid(row=3, column=1)
+
+
+
+
+
+
+After all the lables were build the function buttons were created which are the 'total, reset, and exit' buttons that all function as they should. When first running the program you can click the 'total' button and a random refernece will be generated for your customer number, and after all the inputs are enetered for the items desired if you press the total button the total price estimate will appear in dollars in the total label section. Once all the labels were created all i did was define the rest of my functions and create a mainloop at the end of the program that keeps it open. If you press exit on the program it will close. 
 
 # Modules
 tkinter/
